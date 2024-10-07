@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config",
+  "version": "0.0.1",
+  "private": false,
+  "description": "ESLint configuration used by Nickael Almeida.",
+  "author": "Nickael Almeida",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/nickaelAlmeida/eslint-config"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@eslint/js": "^9.12.0",
+    "eslint": "^9.12.0",
+    "typescript-eslint": "^8.8.0"
+  }
+}
