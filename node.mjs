@@ -6,7 +6,7 @@ export default {
     pluginJs.configs.recommended,
     ...tseslint.configs.recommended,
     {
-      files: ['**/*.{mjs,cjs,ts}'],
+      files: ['./src/**/*.{mjs,cjs,ts}'],
       rules: {
         'eol-last': ['warn', 'always'],
         'no-trailing-spaces': 'warn',
@@ -30,6 +30,34 @@ export default {
         'no-unused-vars': ['warn', { 'ignoreRestSiblings': true, 'varsIgnorePattern': '^_' }],
         'padding-line-between-statements': ['error', { 'blankLine': 'never', 'prev': ['import', 'cjs-import'], 'next': ['import', 'cjs-import'] }],
         'no-console': ['warn', { 'allow': ['warn', 'error'] }],
+        'ban-ts-ignore': 'off',
+        'no-var-requires': 'off',
+        'no-explicit-any': 'warn',
+        '@typescript-eslint/naming-convention': ['error', {
+          'selector': 'interface',
+          'format': ['PascalCase'],
+          'custom': {
+            'regex': '^[A-Z]',
+            'match': true
+          }
+        }, {
+          'selector': 'typeAlias',
+          'format': ['PascalCase'],
+          'custom': {
+            'regex': '^[A-Z]',
+            'match': true
+          }
+        }, {
+          'selector': 'enum',
+          'format': ['PascalCase'],
+          'custom': {
+            'regex': '^[A-Z]',
+            'match': true
+          }
+        }, {
+          'selector': 'enumMember',
+          'format': ['UPPER_CASE']
+        }],
       },
     },
   ]
