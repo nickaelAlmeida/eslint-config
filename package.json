@@ -1,6 +1,6 @@
 {
   "name": "eslint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "ESLint configuration used by Nickael Almeida.",
   "author": "Nickael Almeida",
@@ -12,7 +12,6 @@
   "dependencies": {
     "@eslint/js": "^9.12.0",
     "eslint": "^9.12.0",
-    "eslint-plugin-react": "^7.37.1",
     "typescript-eslint": "^8.8.0"
   }
 }
